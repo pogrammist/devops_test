@@ -15,8 +15,6 @@ services:
     build: ./backend
     restart: always
     container_name: backend
-    ports:
-      - "${BACKEND_HTTP_PORT}:8080"
     networks:
       - localnet
     depends_on:
